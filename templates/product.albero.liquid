@@ -1,0 +1,19 @@
+<div class="px-4 py-5 my-5 text-center" style="background-image: url('{{ product.images[0] | product_img_url: '2048x1024' }}');background-size:cover; background-position:center center; padding: 50px 0;
+    text-align: center;">
+    <h1 style="font-size: 35px;font-weight: 600;font-family:'Yusei Magic' !important;color:white;padding:50px 0;">{{ product.title }}</h1>
+</div>
+<div style="background-color:#97BC42;padding:25px; text-align:center">
+  <h1 style="font-size: 30px;font-weight: 600;font-family:'Yusei Magic';color:white;">PERCHÈ ADOTTARE UN CILIEGIO?
+  </h1>
+  <p style=color:white;>Perchè è bello adottare un albero e sapere che te lo cresci tu</p>
+</div>
+<div>
+  <div>
+    
+    {% for prod-image in product.images %}
+    	<img src="{{prod-image}}">
+    {% endfor%}
+  </div>
+  <div>
+  </div>
+</div>
